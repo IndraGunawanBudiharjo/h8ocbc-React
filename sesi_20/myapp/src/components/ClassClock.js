@@ -25,9 +25,13 @@ class ClassClock extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Class Component</h1>
-        <hr />
-        <h1>{ this.state.date.toLocaleTimeString() }</h1>
+        <div className="card text-white bg-dark mb-3">
+          <div className="card-header">Class Component</div>
+          <div className="card-body">
+            <h5 className="card-title">Today: {this.state.date.toLocaleDateString()}</h5>
+            <p className="card-text">{this.state.date.toLocaleTimeString()}</p>
+          </div>
+        </div>
       </div>
     );
   }

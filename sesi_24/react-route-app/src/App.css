@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.FunctionalClock {
-  width: 500px;
-  margin: 0 auto;
-  text-align: center;
-}
-/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -21,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,4 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-} */
+}

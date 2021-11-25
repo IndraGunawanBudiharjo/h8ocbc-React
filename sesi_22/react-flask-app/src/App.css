@@ -1,13 +1,15 @@
+.Paragraph.Green {
+  background-color: #77dd77;
+}
+
+.Paragraph.Blue {
+  background-color: lightskyblue;
+}
+
 .App {
   text-align: center;
 }
 
-.FunctionalClock {
-  width: 500px;
-  margin: 0 auto;
-  text-align: center;
-}
-/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -41,4 +43,5 @@
   to {
     transform: rotate(360deg);
   }
-} */
+}
+

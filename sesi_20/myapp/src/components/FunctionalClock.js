@@ -5,9 +5,10 @@ function FunctionalClock() {
 
   useEffect(() => {
     const interval = setInterval(tick, 1000)
-    // console.log(interval)
+    console.log('set interval')
     return function(){
       clearInterval(interval)
+      console.log('clear interval')
     }
   }, [])
 
@@ -17,9 +18,13 @@ function FunctionalClock() {
   
   return (
     <div className="App">
-      <h1>Functional Component</h1>
-      <hr />
-      <h1>{date.toLocaleTimeString()}</h1>
+      <div className="card text-white bg-dark mb-3">
+          <div className="card-header">Functional Component</div>
+          <div className="card-body">
+            <h5 className="card-title">Today: {date.toLocaleDateString()}</h5>
+            <p className="card-text">{date.toLocaleTimeString()}</p>
+          </div>
+        </div>
     </div>
   );
 }
